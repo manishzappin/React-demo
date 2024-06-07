@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Cardss from './component/Cardss';
+import NavBar from './component/NavBar';
+// import Corousel from './component/Corousel';
+import DarkVariantExample from './component/DarkVariantExample';
+import TemporaryDrawer from './component/TemporaryDrawer';
+import AlertDialogSlide from './component/AlertDialogSlide';
+
+import FormExample from './component/FormExample';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div  style={{width:"100%" }} >
+      <NavBar/>
+      <DarkVariantExample/>
+      <div style={{display:"flex" , overflow:"hidden" , flexWrap:"wrap"}} >
+      <Cardss/>
+      <Cardss/>
+      
+      </div>
+      <TemporaryDrawer/>
+      <AlertDialogSlide/>
+      <FormExample/>
+      <NavBar/>
     </div>
   );
 }
